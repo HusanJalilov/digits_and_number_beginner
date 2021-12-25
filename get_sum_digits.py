@@ -24,6 +24,7 @@ def get_length(num):
     x5=num%10
     num//=10
     s=0
+    
     s=x1+x2+x3+x4+x5
 
     
