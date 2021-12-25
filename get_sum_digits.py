@@ -1,36 +1,29 @@
-#get number of digits in an int?
-def get_length(num):
+#Find the sum of digits in an integer
+def get_sum_digits(num):
     """
-    Get length of integer
-`   
+    Get sum of digits in integer
+    
     Args:
-        num (int): integer to get length of
-
+        num (int): integer to get sum of digits of
+    
     Returns:
-        int: length of integer
+        int: sum of digits in integer
     """
     x1=num%10
     num//=10
-    
+
     x2=num%10
     num//=10
-    
+
     x3=num%10
     num//=10
-    
+
     x4=num%10
     num//=10
 
     x5=num%10
-    num//=10
-    s=0
-    
-    s=x1+x2+x3+x4+x5
+    num//10
 
-    
-    
-    # return number of digits in integer
-    return s
-
-
- 
+    # return sum of digits in integer
+    return  x1,x2,x3,x4,x5
+print(get_sum_digits(324))
