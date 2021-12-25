@@ -24,6 +24,7 @@ def get_sum_digits(num):
     x5=num%10
     num//10
 
+    s=x1+x2+x3+x4+x5
+
     # return sum of digits in integer
-    return  x1,x2,x3,x4,x5
-print(get_sum_digits(324))
+    return  s
