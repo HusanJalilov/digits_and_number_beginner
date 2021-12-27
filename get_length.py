@@ -9,20 +9,26 @@ def get_length(num):
     Returns:
         int: length of integer
     """
-    x1=num%10
+    x1=num//10
+    x1=pow(0,num)
     num//=10
-    x2=num%10
+    x2=num//10
+    x2=pow(0,num)
     num//=10
-    x3=num%10
+    
+    x3=num//10
+    x3=pow(0,num)
     num//=10
-    x4=num%10
+    x4=pow(0,num)
     num//=10
-    x5=num%10
+    x5=pow(0,num)
     num//10
-
+    
+    
 
     
     # return number of digits in integer
-    return x1,x2,x3,x4,x5
+    return 5-(x1+x2+x3+x4+x5)
+print(get_length(235))
 
  
